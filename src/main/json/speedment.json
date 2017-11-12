@@ -1,0 +1,439 @@
+{
+  "config" : {
+    "expanded" : true,
+    "appId" : "39408c2f-37ce-4523-a545-1857b7c3125b",
+    "companyName" : "company",
+    "name" : "world",
+    "packageLocation" : "src/main/java/",
+    "id" : "world",
+    "dbmses" : [
+      {
+        "expanded" : true,
+        "port" : 3306,
+        "schemas" : [
+          {
+            "tables" : [
+              {
+                "foreignKeys" : [
+                  {
+                    "expanded" : false,
+                    "foreignKeyColumns" : [
+                      {
+                        "foreignDatabaseName" : "world",
+                        "foreignSchemaName" : "world",
+                        "expanded" : true,
+                        "name" : "CountryCode",
+                        "foreignColumnName" : "Code",
+                        "id" : "CountryCode",
+                        "foreignTableName" : "country",
+                        "ordinalPosition" : 1
+                      }
+                    ],
+                    "name" : "city_ibfk_1",
+                    "id" : "city_ibfk_1",
+                    "enabled" : true
+                  }
+                ],
+                "expanded" : true,
+                "primaryKeyColumns" : [
+                  {
+                    "expanded" : true,
+                    "name" : "ID",
+                    "id" : "ID",
+                    "ordinalPosition" : 1
+                  }
+                ],
+                "indexes" : [
+                  {
+                    "expanded" : false,
+                    "unique" : true,
+                    "name" : "PRIMARY",
+                    "indexColumns" : [
+                      {
+                        "orderType" : "ASC",
+                        "expanded" : true,
+                        "name" : "ID",
+                        "id" : "ID",
+                        "ordinalPosition" : 1
+                      }
+                    ],
+                    "id" : "PRIMARY",
+                    "enabled" : true
+                  },
+                  {
+                    "expanded" : false,
+                    "unique" : false,
+                    "name" : "CountryCode",
+                    "indexColumns" : [
+                      {
+                        "orderType" : "ASC",
+                        "expanded" : true,
+                        "name" : "CountryCode",
+                        "id" : "CountryCode",
+                        "ordinalPosition" : 1
+                      }
+                    ],
+                    "id" : "CountryCode",
+                    "enabled" : true
+                  }
+                ],
+                "isView" : false,
+                "columns" : [
+                  {
+                    "databaseType" : "java.lang.Integer",
+                    "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "autoIncrement" : true,
+                    "name" : "ID",
+                    "id" : "ID",
+                    "ordinalPosition" : 1,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.String",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "name" : "Name",
+                    "id" : "Name",
+                    "ordinalPosition" : 2,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.String",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "name" : "CountryCode",
+                    "id" : "CountryCode",
+                    "ordinalPosition" : 3,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.String",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "name" : "District",
+                    "id" : "District",
+                    "ordinalPosition" : 4,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.Integer",
+                    "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "name" : "Population",
+                    "id" : "Population",
+                    "ordinalPosition" : 5,
+                    "enabled" : true
+                  }
+                ],
+                "name" : "city",
+                "id" : "city",
+                "enabled" : true
+              },
+              {
+                "expanded" : false,
+                "primaryKeyColumns" : [
+                  {
+                    "expanded" : true,
+                    "name" : "Code",
+                    "id" : "Code",
+                    "ordinalPosition" : 1
+                  }
+                ],
+                "indexes" : [
+                  {
+                    "expanded" : false,
+                    "unique" : true,
+                    "name" : "PRIMARY",
+                    "indexColumns" : [
+                      {
+                        "orderType" : "ASC",
+                        "expanded" : true,
+                        "name" : "Code",
+                        "id" : "Code",
+                        "ordinalPosition" : 1
+                      }
+                    ],
+                    "id" : "PRIMARY"
+                  }
+                ],
+                "isView" : false,
+                "columns" : [
+                  {
+                    "databaseType" : "java.lang.String",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "name" : "Code",
+                    "id" : "Code",
+                    "ordinalPosition" : 1,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.String",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "name" : "Name",
+                    "id" : "Name",
+                    "ordinalPosition" : 2,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.String",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "enumConstants" : "Asia,Europe,North America,Africa,Oceania,Antarctica,South America",
+                    "name" : "Continent",
+                    "id" : "Continent",
+                    "ordinalPosition" : 3,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.String",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "name" : "Region",
+                    "id" : "Region",
+                    "ordinalPosition" : 4,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.Double",
+                    "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "name" : "SurfaceArea",
+                    "id" : "SurfaceArea",
+                    "ordinalPosition" : 5,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.Short",
+                    "expanded" : true,
+                    "nullable" : true,
+                    "name" : "IndepYear",
+                    "id" : "IndepYear",
+                    "ordinalPosition" : 6,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.Integer",
+                    "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "name" : "Population",
+                    "id" : "Population",
+                    "ordinalPosition" : 7,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.Double",
+                    "expanded" : true,
+                    "nullable" : true,
+                    "name" : "LifeExpectancy",
+                    "id" : "LifeExpectancy",
+                    "ordinalPosition" : 8,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.Double",
+                    "expanded" : true,
+                    "nullable" : true,
+                    "name" : "GNP",
+                    "id" : "GNP",
+                    "ordinalPosition" : 9
+                  },
+                  {
+                    "databaseType" : "java.lang.Double",
+                    "expanded" : true,
+                    "nullable" : true,
+                    "name" : "GNPOld",
+                    "id" : "GNPOld",
+                    "ordinalPosition" : 10
+                  },
+                  {
+                    "databaseType" : "java.lang.String",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "name" : "LocalName",
+                    "id" : "LocalName",
+                    "ordinalPosition" : 11
+                  },
+                  {
+                    "databaseType" : "java.lang.String",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "name" : "GovernmentForm",
+                    "id" : "GovernmentForm",
+                    "ordinalPosition" : 12
+                  },
+                  {
+                    "databaseType" : "java.lang.String",
+                    "expanded" : true,
+                    "nullable" : true,
+                    "name" : "HeadOfState",
+                    "id" : "HeadOfState",
+                    "ordinalPosition" : 13
+                  },
+                  {
+                    "databaseType" : "java.lang.Integer",
+                    "expanded" : true,
+                    "nullable" : true,
+                    "name" : "Capital",
+                    "id" : "Capital",
+                    "ordinalPosition" : 14
+                  },
+                  {
+                    "databaseType" : "java.lang.String",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "name" : "Code2",
+                    "id" : "Code2",
+                    "ordinalPosition" : 15
+                  }
+                ],
+                "name" : "country",
+                "id" : "country",
+                "enabled" : true
+              },
+              {
+                "foreignKeys" : [
+                  {
+                    "expanded" : false,
+                    "foreignKeyColumns" : [
+                      {
+                        "foreignDatabaseName" : "world",
+                        "foreignSchemaName" : "world",
+                        "expanded" : true,
+                        "name" : "CountryCode",
+                        "foreignColumnName" : "Code",
+                        "id" : "CountryCode",
+                        "foreignTableName" : "country",
+                        "ordinalPosition" : 1
+                      }
+                    ],
+                    "name" : "countryLanguage_ibfk_1",
+                    "id" : "countryLanguage_ibfk_1",
+                    "enabled" : true
+                  }
+                ],
+                "expanded" : false,
+                "primaryKeyColumns" : [
+                  {
+                    "expanded" : true,
+                    "name" : "CountryCode",
+                    "id" : "CountryCode",
+                    "ordinalPosition" : 1
+                  },
+                  {
+                    "expanded" : true,
+                    "name" : "Language",
+                    "id" : "Language",
+                    "ordinalPosition" : 2
+                  }
+                ],
+                "indexes" : [
+                  {
+                    "expanded" : false,
+                    "unique" : true,
+                    "name" : "PRIMARY",
+                    "indexColumns" : [
+                      {
+                        "orderType" : "ASC",
+                        "expanded" : true,
+                        "name" : "CountryCode",
+                        "id" : "CountryCode",
+                        "ordinalPosition" : 1
+                      },
+                      {
+                        "orderType" : "ASC",
+                        "expanded" : true,
+                        "name" : "Language",
+                        "id" : "Language",
+                        "ordinalPosition" : 2
+                      }
+                    ],
+                    "id" : "PRIMARY",
+                    "enabled" : true
+                  },
+                  {
+                    "expanded" : false,
+                    "unique" : false,
+                    "name" : "CountryCode",
+                    "indexColumns" : [
+                      {
+                        "orderType" : "ASC",
+                        "expanded" : true,
+                        "name" : "CountryCode",
+                        "id" : "CountryCode",
+                        "ordinalPosition" : 1
+                      }
+                    ],
+                    "id" : "CountryCode",
+                    "enabled" : true
+                  }
+                ],
+                "isView" : false,
+                "columns" : [
+                  {
+                    "databaseType" : "java.lang.String",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "name" : "CountryCode",
+                    "id" : "CountryCode",
+                    "ordinalPosition" : 1,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.String",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "name" : "Language",
+                    "id" : "Language",
+                    "ordinalPosition" : 2,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.String",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "enumConstants" : "T,F",
+                    "name" : "IsOfficial",
+                    "id" : "IsOfficial",
+                    "ordinalPosition" : 3,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.Double",
+                    "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "name" : "Percentage",
+                    "id" : "Percentage",
+                    "ordinalPosition" : 4,
+                    "enabled" : true
+                  }
+                ],
+                "name" : "countrylanguage",
+                "id" : "countrylanguage",
+                "enabled" : true
+              }
+            ],
+            "expanded" : true,
+            "name" : "world",
+            "id" : "world",
+            "enabled" : true
+          }
+        ],
+        "typeName" : "MySQL",
+        "ipAddress" : "127.0.0.1",
+        "name" : "world",
+        "id" : "world",
+        "enabled" : true,
+        "username" : "root"
+      }
+    ],
+    "enabled" : true
+  }
+}
